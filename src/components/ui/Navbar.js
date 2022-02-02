@@ -1,54 +1,47 @@
-import React,{useContext} from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
-import {AuthContext} from '../../auth/authContext'
-import { types } from '../../types/types'
+import React, { useContext } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../auth/authContext";
+import { types } from "../../types/types";
 export const Navbar = () => {
-    const navigate = useNavigate()
-    const {user,dispatch} = useContext(AuthContext)
-    
-    const handleLogOut =()=>{
-        
-        const action ={
-            type: types.logout,
-            payload: {
-                name: '',
-                logged: false,
-            }
-        }
-        localStorage.removeItem('user')
-        dispatch(action);
-        navigate('/login',{
-            replace:true
-        })
-    }
+    const navigate = useNavigate();
+    const { user, dispatch } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        localStorage.removeItem("user");
+        dispatch({ type: types.logout, payload: { name: "",logged: false, } });
+        navigate("/login", {
+            replace: true,
+        });
+    };
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            
-            <Link 
-                className="navbar-brand" 
-                to="/"
-            >
+            <Link className="navbar-brand" to="/">
                 Asociaciones
             </Link>
 
             <div className="navbar-collapse">
                 <div className="navbar-nav">
-
-                    <NavLink 
-                        className={({isActive})=> "nav-item nav-link" + (isActive ? ' active' : '')} 
+                    <NavLink
+                        className={({ isActive }) =>
+                            "nav-item nav-link" + (isActive ? " active" : "")
+                        }
                         to="/marvel"
                     >
                         Marvel
                     </NavLink>
 
-                    <NavLink 
-                        className={({isActive})=> "nav-item nav-link" + (isActive ? ' active' : '')} 
+                    <NavLink
+                        className={({ isActive }) =>
+                            "nav-item nav-link" + (isActive ? " active" : "")
+                        }
                         to="/dc"
                     >
                         DC
                     </NavLink>
-                    <NavLink 
-                        className={({isActive})=> "nav-item nav-link" + (isActive ? ' active' : '')} 
+                    <NavLink
+                        className={({ isActive }) =>
+                            "nav-item nav-link" + (isActive ? " active" : "")
+                        }
                         to="/search"
                     >
                         Search
@@ -58,9 +51,11 @@ export const Navbar = () => {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
                 <ul className="navbar-nav ml-auto">
-                    <span className='nav-item nav-link text-info'>{user.name}</span>
-                    <button 
-                        className="nav-item nav-link btn" 
+                    <span className="nav-item nav-link text-info">
+                        {user.name}
+                    </span>
+                    <button
+                        className="nav-item nav-link btn"
                         onClick={handleLogOut}
                     >
                         Logout
@@ -68,5 +63,5 @@ export const Navbar = () => {
                 </ul>
             </div>
         </nav>
-    )
-}
+    );
+};
