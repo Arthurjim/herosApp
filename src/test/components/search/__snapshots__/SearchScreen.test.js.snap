@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SerchScren /> Debe mostrarse correctamente 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-5"
+  >
+    <h4
+      className="text-uppercase"
+    >
+      Found your favorit hero.
+    </h4>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        autoComplete="off"
+        className="form-control"
+        name="searchText"
+        onChange={[Function]}
+        placeholder="Search a hero"
+        type="text"
+        value=""
+      />
+      <button
+        className="btn btn-outline-primary mt-2"
+        type="submit"
+      >
+        Search...
+      </button>
+    </form>
+  </div>
+  <div
+    className="col-7"
+  >
+    <div
+      className="animate__animated animate__fadeIn"
+    >
+      <div
+        className="altert alert-info text-center p-2"
+      >
+        Heros...
+      </div>
+    </div>
+  </div>
+</div>
+`;

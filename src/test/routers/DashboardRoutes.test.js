@@ -10,15 +10,32 @@ describe("Pruebas en <DashboardRoutes/>", () => {
             name: "Juanito",
         },
     };
-    test("Debe de mostrarse correctamente", () => {
+    test("Debe de mostrarse correctamente -Marvel", () => {
         const wrapper = mount(
             <AuthContext.Provider value={contextValue}>
-                <MemoryRouter>
+                <MemoryRouter initialEntries={ ['/'] }>
                     <DashboardRoutes />
 
                 </MemoryRouter>
             </AuthContext.Provider>
         );
         expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('.text-info').text().trim()).toBe('Juanito');
+
+    });
+
+    test("Debe de mostrarse correctamente -DC", () => {
+        const wrapper = mount(
+            <AuthContext.Provider value={contextValue}>
+                <MemoryRouter initialEntries={ ['/dc'] }>
+                    <DashboardRoutes />
+
+                </MemoryRouter>
+            </AuthContext.Provider>
+        );
+        // console.log(wrapper.html());
+        expect(wrapper.find('h1').text().trim()).toBe('DC Comics');
+        expect(wrapper).toMatchSnapshot();
+        
     });
 });
