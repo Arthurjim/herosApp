@@ -8,7 +8,7 @@ export const Navbar = () => {
 
     const handleLogOut = () => {
         localStorage.removeItem("user");
-        dispatch({ type: types.logout, payload: { name: "",logged: false, } });
+        dispatch({ type: types.logout});
         navigate("/login", {
             replace: true,
         });
