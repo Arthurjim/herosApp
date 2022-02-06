@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { heroImages } from '../helpers/heroImages';
 const HereoCard = ({
     id,
     superhero,
@@ -7,14 +8,14 @@ const HereoCard = ({
     first_appearance,
     characters,
 }) => {
-    const urlImg = `/assets/${id}.jpg`;
+    // const urlImg = `/assets/${id}.jpg`;
     return (
         <div className="col animate__animated animate__fadeIn">
             <div className="card h-100 ">
                 <div className="row no-gutters">
                     <div className="col-4">
                         <img
-                            src={urlImg}
+                            src={heroImages(`${id}`)}
                             className="card-img"
                             alt={superhero}
                         />

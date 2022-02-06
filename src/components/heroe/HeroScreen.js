@@ -1,6 +1,8 @@
 import React, { useMemo } from "react";
 import { useParams, Navigate, useNavigate } from "react-router-dom";
 import { getHeroById } from "../selectors/getHeroById";
+// const heroImages = require.context('../../assets/heroes',true)
+import { heroImages } from '../helpers/heroImages';
 
 const HeroScreen = () => {
     const { heroId } = useParams();
@@ -23,12 +25,12 @@ const HeroScreen = () => {
         characters,
     } = hero;
 
-    const hereoImg = `/assets/${id}.jpg`;
+    // const hereoImg = `/assets/${id}.jpg`;
 
     return (
         <div className="row mt-5 animate__animated animate__bounceInDown">
             <div className="col-4">
-                <img src={hereoImg} alt={superhero} className="img-thumbnail" />
+                <img src={heroImages(`${id}`)} alt={superhero} className="img-thumbnail" />
             </div>
             <div className="col-8">
                 <h3 className="mx-2">{superhero}</h3>

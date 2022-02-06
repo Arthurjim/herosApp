@@ -87,7 +87,7 @@ Array [
                 <img
                   alt="Batman"
                   className="card-img"
-                  src="/assets/dc-batman.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -141,7 +141,7 @@ Array [
                 <img
                   alt="Superman"
                   className="card-img"
-                  src="/assets/dc-superman.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -195,7 +195,7 @@ Array [
                 <img
                   alt="Flash"
                   className="card-img"
-                  src="/assets/dc-flash.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -254,7 +254,7 @@ Array [
                 <img
                   alt="Green Lantern"
                   className="card-img"
-                  src="/assets/dc-green.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -313,7 +313,7 @@ Array [
                 <img
                   alt="Green Arrow"
                   className="card-img"
-                  src="/assets/dc-arrow.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -367,7 +367,7 @@ Array [
                 <img
                   alt="Wonder Woman"
                   className="card-img"
-                  src="/assets/dc-wonder.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -421,7 +421,7 @@ Array [
                 <img
                   alt="Martian Manhunter"
                   className="card-img"
-                  src="/assets/dc-martian.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -480,7 +480,7 @@ Array [
                 <img
                   alt="Robin/Nightwing"
                   className="card-img"
-                  src="/assets/dc-robin.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -534,7 +534,7 @@ Array [
                 <img
                   alt="Blue Beetle"
                   className="card-img"
-                  src="/assets/dc-blue.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -593,7 +593,7 @@ Array [
                 <img
                   alt="Black Canary"
                   className="card-img"
-                  src="/assets/dc-black.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -729,7 +729,7 @@ Array [
                 <img
                   alt="Spider Man"
                   className="card-img"
-                  src="/assets/marvel-spider.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -783,7 +783,7 @@ Array [
                 <img
                   alt="Captain America"
                   className="card-img"
-                  src="/assets/marvel-captain.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -837,7 +837,7 @@ Array [
                 <img
                   alt="Iron Man"
                   className="card-img"
-                  src="/assets/marvel-iron.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -891,7 +891,7 @@ Array [
                 <img
                   alt="Thor"
                   className="card-img"
-                  src="/assets/marvel-thor.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -945,7 +945,7 @@ Array [
                 <img
                   alt="Hulk"
                   className="card-img"
-                  src="/assets/marvel-hulk.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -999,7 +999,7 @@ Array [
                 <img
                   alt="Wolverine"
                   className="card-img"
-                  src="/assets/marvel-wolverine.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -1053,7 +1053,7 @@ Array [
                 <img
                   alt="Daredevil"
                   className="card-img"
-                  src="/assets/marvel-daredevil.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -1107,7 +1107,7 @@ Array [
                 <img
                   alt="Hawkeye"
                   className="card-img"
-                  src="/assets/marvel-hawkeye.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -1161,7 +1161,7 @@ Array [
                 <img
                   alt="Cyclops"
                   className="card-img"
-                  src="/assets/marvel-cyclops.jpg"
+                  src=""
                 />
               </div>
               <div
@@ -1215,7 +1215,7 @@ Array [
                 <img
                   alt="Silver Surfer"
                   className="card-img"
-                  src="/assets/marvel-silver.jpg"
+                  src=""
                 />
               </div>
               <div
